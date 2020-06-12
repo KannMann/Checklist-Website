@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<meta charset = "utf-8">
+
+<head>
+    <title>A Better UI</title>
+</head>
+
+
+<body>
+
+    <div role="banner" id="top">
+            <div style="background: rgb(0, 153, 255); color: #FFF; text-align:left;padding: 1em 3em;">
+                <p class="meta"> <strong>A Better User Interface for Automation Scripts 1.0 </strong> </p>
+                    <p>by Shai Khadka</p>
+                
+            </div>
+    </div>
+
+    <div id="billboard">
+            <div style=" text-align:left;padding: 1em 3em;">
+
+                <form method="post">
+                    {% csrf_token %}
+                    <p><button type="submit" name="step_1">Execute Phase 1</button> </p>
+                </form>
+                
+                <form method="post">
+                    {% csrf_token %}
+                    <p><button type="submit" name="step_2">Execute Phase 2</button></p>
+                </form>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <p><button type="submit" name="placeholder_button">Bonus Placeholder Button</button></p>
+                </form>
+                
+            </div>
+    </div>
+
+</body>
+
+
+
+</html>
+
